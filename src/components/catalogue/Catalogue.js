@@ -15,16 +15,19 @@ function Catalogue() {
     <>
       <div id="container-catalogue">
         {List.map(function (element, index) {
+          console.log(element.link);
           return (
             <>
-              <img
-                onClick={handleClick}
-                key={index}
-                className="img-catalogue"
-                src={element.path}
-                alt={element.alt}
-                style={{ backgroundColor: element.color }}
-              ></img>
+              <div id="img-container">
+                <img
+                  onClick={handleClick}
+                  key={index}
+                  className="img-catalogue"
+                  src={element.path}
+                  alt={element.alt}
+                  style={{ backgroundColor: element.color }}
+                ></img>
+              </div>
               {showModal && (
                 <div id="modal-overlay">
                   <div id="modal">
@@ -32,10 +35,9 @@ function Catalogue() {
                       <CloseTab />
                     </div>
                     <div id="modal-container-model">
-                      <ImageSlide />
                       <a href={element.link} id="info-container">
                         <div href={element.link} className="info-img">
-                          See a more detailed view of this model.
+                          ${element.link}
                         </div>
 
                         <div className="button-info"></div>

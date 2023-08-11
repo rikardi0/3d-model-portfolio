@@ -9,7 +9,7 @@
   justify-content: center;
   gap: 20px;
   padding-block: 2px;
-  background-color: rgba(0, 0, 0, 0.63);
+  background-color: rgb(17, 17, 17);
   border-bottom: 5px solid rgba(0, 0, 0, 0.404);
   font-size: 1.5rem;
   letter-spacing: 2px;
@@ -104,7 +104,13 @@
     font-size: 3rem;
   }
 }
-
+@media only screen and (max-height: 550px) {
+  #modal-contact {
+    overflow-y: scroll;
+    width: 90%;
+    height: 100%;
+  }
+}
 @keyframes slideInFromBottom {
   0% {
     transform: translateY(-200%);

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(206, 206, 206);
+  background-color: rgb(218, 218, 218);
   overflow-x: hidden;
 }
 #menu {
@@ -11,14 +11,14 @@ body {
   color: white;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-direction: column;
-  height: 25px;
+  height: 50px;
   width: 100vw;
 }
 #dron-img {
   position: absolute;
-  height: 135px;
+  height: 180px;
   top: 5px;
   right: 0px;
 }
@@ -27,7 +27,7 @@ body {
   position: absolute;
   position: absolute;
   z-index: 0;
-  height: 120px;
+  height: 160px;
   top: 20px;
   right: 40px;
 }
@@ -78,13 +78,15 @@ body {
 }
 .head-subtext3 {
   padding-inline: 20px;
-  font-size: 1rem;
+  padding-block: 5px;
+  font-size: 1.2rem;
   font-weight: 300;
   margin-top: 10px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 #head-subtext4 {
-  background-color: rgb(255, 157, 92);
+  background-color: rgb(0, 0, 0);
+  color: white;
   padding-block: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -162,7 +164,7 @@ body {
   .head-subtext3 {
     padding-inline: 90px;
     padding-block: 10px;
-    font-size: 2.65rem;
+    font-size: 2rem;
   }
   #head-subtext4 {
     font-size: 5rem;

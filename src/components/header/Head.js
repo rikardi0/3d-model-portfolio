@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../assets/img/Global-Ilumination.png";
-import ImageShadow from "../../assets/img/Sombra.png";
+import Image from "../../assets/img/dron/Global-Ilumination.png";
+import ImageShadow from "../../assets/img/dron/Sombra.png";
 import Menu from "../../assets/ui/menu/menu";
 import "./Head.css";
 
@@ -29,9 +29,6 @@ function Head() {
           creations.
         </span>
 
-        <span className="head-subtext3">
-          Let's collaborate to transform your ideas into tangible masterpieces.
-        </span>
         <span id="head-subtext4"> Explore now</span>
       </div>
     </>

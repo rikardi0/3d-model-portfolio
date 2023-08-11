@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 60vh;
+  height: 90vh;
   background-color: rgb(255, 255, 255);
   animation: slideInFromBottom 0.5s ease-in-out;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.438);
@@ -33,9 +33,11 @@
 #list-links span {
   color: rgba(24, 8, 2, 0.363);
 }
+#list-projects {
+  text-align: center;
+}
 #list-projects a {
   font-weight: 700;
-  margin-left: 100px;
 }
 
 #spacer-menu {
@@ -113,7 +115,7 @@
     justify-content: flex-end;
     height: 100vh;
     width: 55vw;
-    animation: slideInFromRight 0.75s ease-in-out;
+    animation: slideRight 0.75s ease-in-out;
   }
   .burger {
     width: 30px;
@@ -134,30 +136,20 @@
     padding-inline: 10px;
   }
   #link-project {
-    margin-left: 100px;
+    margin-left: 200px;
   }
-  #list-projects a {
-    margin-left: 150px;
+  #list-projects {
+    text-align: left;
   }
 }
 
-@keyframes slideInFromRight {
+@keyframes slideRight {
   0% {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
     opacity: 1;
   }
   100% {
     transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slideInFromBottom {
-  0% {
-    transform: translateY(-200%);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(0);
     opacity: 1;
   }
 }
