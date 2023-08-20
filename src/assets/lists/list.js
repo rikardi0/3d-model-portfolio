@@ -1,24 +1,64 @@
-import images from "../img/index.js";
+import imagesDron from "../img/dron/index.js";
+import imagesCamera from "../img/camera/indexCamera.js";
+import imagesBicycle from "../img/bicicleta/indexBicycle.js";
+import imagesGeneva from "../img/geneva/indexGeneva.js";
 
 const portfoliolist = [
   {
-    path: images.dronRoja,
-    alt: "dron sombra",
+    path: imagesDron.dronRoja,
+    alt: "Dron",
     color: "#f5f5f5",
     link: "/dron-model",
 
     imagesSlide: [
       {
-        path: images.dron,
+        path: imagesDron.dron,
       },
       {
-        path: images.dronExplode,
+        path: imagesDron.dronExplode,
       },
       {
-        path: images.dronEstructura,
+        path: imagesDron.dronEstructura,
       },
       {
-        path: images.camaraAire,
+        path: imagesDron.camaraAire,
+      },
+    ],
+  },
+  {
+    path: imagesCamera.camara,
+    alt: "DSLR Camera",
+    color: "#f5f5f5",
+    link: "/dron-model",
+
+    imagesSlide: [
+      {
+        path: imagesDron.dron,
+      },
+    ],
+  },
+
+  {
+    path: imagesGeneva.genevaDrive,
+    alt: "Geneva Drive",
+    color: "#f5f5f5",
+    link: "/dron-model-cosa",
+
+    imagesSlide: [
+      {
+        path: imagesBicycle.bicicleta,
+      },
+    ],
+  },
+  {
+    path: imagesBicycle.bicicleta,
+    alt: "Bicycle",
+    color: "#f5f5f5",
+    link: "/dron-model-cosa",
+
+    imagesSlide: [
+      {
+        path: imagesBicycle.bicicleta,
       },
     ],
   },

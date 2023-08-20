@@ -1,15 +1,10 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
-import list from "../../lists/list";
 import "react-slideshow-image/dist/styles.css";
 import "./ImageSlide.css";
 
-function ImageSlide() {
-  let images = [];
-  list.map(function (element) {
-    images = element.imagesSlide;
-    return images;
-  });
+function ImageSlide(props) {
+  let { images } = props;
 
   return (
     <Slide indicators={false} autoplay={false}>

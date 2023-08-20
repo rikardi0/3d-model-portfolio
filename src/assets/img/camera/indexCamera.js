@@ -8,7 +8,9 @@ const tryRequire = (path) => {
 };
 
 const imageExportsCamera = {
-  camara: tryRequire("./camera-sldr 4.jpg") || require("./camera-sldr 4.jpg"),
+  camara: tryRequire("./camera-sldr 5.jpg") || require("./camera-sldr 4.jpg"),
+  camaraZoom:
+    tryRequire("./camera-sldr 4.jpg") || require("./camera-sldr 4.jpg"),
 };
 
 export default imageExportsCamera;
