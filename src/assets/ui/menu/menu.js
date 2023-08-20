@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import list from "../../lists/list";
 import "./Menu.css";
 function Menu() {
   const [showModal, setModal] = useState(false);
@@ -10,6 +11,7 @@ function Menu() {
   function handleClick() {
     showModal ? setModal(false) : setModal(true);
   }
+
   return (
     <>
       <label class="burger" for="burger">
@@ -26,9 +28,13 @@ function Menu() {
               <div id="spacer-menu"></div>
               <span>Projects</span>
               <div id="list-projects">
-                <a href="/dron-model" id="link-project">
-                  Dron
-                </a>
+                {list.map((e) => {
+                  return (
+                    <a key={e.alt} href={e.link} id="link-project">
+                      {e.alt}
+                    </a>
+                  );
+                })}
               </div>
               <div id="spacer-menu"></div>
               <a href="/Contact">Contact</a>

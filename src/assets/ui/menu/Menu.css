@@ -1,5 +1,6 @@
 #modal-menu {
   position: fixed;
+  overflow-y: auto;
   top: 0;
   left: 0;
   width: 100vw;
@@ -34,7 +35,9 @@
   color: rgba(24, 8, 2, 0.363);
 }
 #list-projects {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 #list-projects a {
   font-weight: 700;
@@ -136,10 +139,12 @@
     padding-inline: 10px;
   }
   #link-project {
-    margin-left: 200px;
+    margin-left: 100px;
   }
   #list-projects {
     text-align: left;
+    display: flex;
+    flex-direction: column;
   }
 }
 
