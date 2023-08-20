@@ -1,64 +1,69 @@
 import React, { useState } from "react";
 import List from "../../../src/assets/lists/list";
-import ImageSlide from "../../assets/ui/slide-img/ImageSlide.js";
 import CloseTab from "../../assets/img/CloseTab";
 import "./Catalogue.css";
+import ImageSlide from "../../assets/ui/slide-img/ImageSlide";
 
 function Catalogue() {
+  function renderGridElement(element, index) {
+    return (
+      <GridElement
+        key={index}
+        link={element.link}
+        path={element.path}
+        imagesSlide={element.imagesSlide}
+      />
+    );
+  }
+
+  return (
+    <>
+      <div id="container-catalogue">{List.map(renderGridElement)}</div>
+    </>
+  );
+}
+
+function GridElement(props) {
   const [showModal, setModal] = useState(false);
   if (showModal) {
     document.body.classList.add("active-modal-contact");
   } else {
     document.body.classList.remove("active-modal-contact");
   }
+
+  const handleClick = () => {
+    setModal(!showModal);
+  };
+
+  const { index, path, link, imagesSlide } = props; // Updated: Use imagesSlide instead of slideImage
+
   return (
     <>
-      <div id="container-catalogue">
-        {List.map(function (element, index) {
-          console.log(element.link);
-          return (
-            <>
-              <div id="img-container">
-                <img
-                  onClick={handleClick}
-                  key={index}
-                  className="img-catalogue"
-                  src={element.path}
-                  alt={element.alt}
-                  style={{ backgroundColor: element.color }}
-                ></img>
-              </div>
-              {showModal && (
-                <div id="modal-overlay">
-                  <div id="modal">
-                    <div id="close-btn" onClick={handleClick}>
-                      <CloseTab />
-                    </div>
-                    <div id="modal-container-model">
-                      <a href={element.link} id="info-container">
-                        <div href={element.link} className="info-img">
-                          ${element.link}
-                        </div>
-
-                        <div className="button-info"></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </>
-          );
-        })}
+      <div id="grid-img-container">
+        <div
+          id="img-container"
+          onClick={handleClick}
+          style={{ backgroundImage: `url("${path}")` }}
+        ></div>
       </div>
+      {showModal && (
+        <div id="modal-overlay">
+          <div id="modal">
+            <div id="close-btn" onClick={handleClick}>
+              <CloseTab />
+            </div>
+            <ImageSlide images={imagesSlide} />
+            <div id="modal-container-model">
+              <a href={link} id="info-container">
+                More details
+                <div className="button-info"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
-  function handleClick() {
-    if (showModal) {
-      setModal(false);
-    } else {
-      setModal(true);
-    }
-  }
 }
 
 export default Catalogue;
