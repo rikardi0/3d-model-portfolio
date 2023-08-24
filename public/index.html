@@ -5,40 +5,14 @@
      <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" />
     <title>SOLIDWORKS Visualize </title>
-    <script src="js/prototype.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/browserdetect.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/apple_core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/vr.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/library.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/threesixty.js" type="text/javascript" charset="utf-8"></script>
+   
     <script type="text/javascript" charset="utf-8">
-	var wheelzoomSet=true;
-        document.observe("dom:loaded", function () {
-            if (AC.Detector.isiPad()) {
-                $('main').addClassName('isipad');
-				}
-				// Added to support zooming with mousewheel
-			    document.onclick = handleMouseEvent;
-           
-        });
-		function handleMouseEvent(e) {
-		var evt = (e==null ? event:e);
-		if (evt.which) { 
-			if (evt.which==2){ // Middle button
-				if(wheelzoomSet == false){
-				wheelzoom(document.querySelector('img'));
-				wheelzoomSet = true;
-				}
-			}
-		}
- 		}
+	
 		
 	</script>
 </head>
 <body>
      <div id="root"> </div>
      
-	<script type="text/javascript" src="js/wheelzoom.js"></script>
 </body>
 </html>
