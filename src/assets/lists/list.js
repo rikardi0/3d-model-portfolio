@@ -33,7 +33,17 @@ const portfoliolist = [
 
     imagesSlide: [
       {
-        path: imagesDron.dron,
+        path: imagesCamera.camaraSola,
+      },
+      {
+        path: imagesCamera.frente,
+      },
+      {
+        path: imagesCamera.desarmadoLado,
+      },
+
+      {
+        path: imagesCamera.lente,
       },
     ],
   },
@@ -46,7 +56,16 @@ const portfoliolist = [
 
     imagesSlide: [
       {
-        path: imagesBicycle.bicicleta,
+        path: imagesGeneva.genevaAngulo,
+      },
+      {
+        path: imagesGeneva.base,
+      },
+      {
+        path: imagesGeneva.drive,
+      },
+      {
+        path: imagesGeneva.driven,
       },
     ],
   },
@@ -58,7 +77,16 @@ const portfoliolist = [
 
     imagesSlide: [
       {
-        path: imagesBicycle.bicicleta,
+        path: imagesBicycle.explode,
+      },
+      {
+        path: imagesBicycle.explode,
+      },
+      {
+        path: imagesBicycle.freno,
+      },
+      {
+        path: imagesBicycle.ruedaBicicleta,
       },
     ],
   },
