@@ -8,7 +8,7 @@ const portfoliolist = [
     path: imagesDron.dronRoja,
     alt: "Dron",
     color: "#f5f5f5",
-    link: "/dron-model",
+    link: "/Dron-model",
 
     imagesSlide: [
       {
@@ -29,7 +29,7 @@ const portfoliolist = [
     path: imagesCamera.camara,
     alt: "DSLR Camera",
     color: "#f5f5f5",
-    link: "/dron-model",
+    link: "/Camera-model",
 
     imagesSlide: [
       {
@@ -42,7 +42,7 @@ const portfoliolist = [
     path: imagesGeneva.genevaDrive,
     alt: "Geneva Drive",
     color: "#f5f5f5",
-    link: "/dron-model-cosa",
+    link: "/Geneva-drive-model",
 
     imagesSlide: [
       {
@@ -54,7 +54,7 @@ const portfoliolist = [
     path: imagesBicycle.bicicleta,
     alt: "Bicycle",
     color: "#f5f5f5",
-    link: "/dron-model-cosa",
+    link: "/Bicycle-model",
 
     imagesSlide: [
       {

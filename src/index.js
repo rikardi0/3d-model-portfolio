@@ -4,7 +4,10 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import ContactPage from "./components/contact/ContactPage";
-import DronDetails from "./components/dron-details/DronDetails";
+import DronDetails from "./components/details/DronDetails";
+import CameraDetails from "./components/details/CameraDetails";
+import GenevaDetails from "./components/details/GenevaDetails";
+import BicycleDetails from "./components/details/BicycleDetails";
 import reportWebVitals from "./reportWebVitals";
 
 import "./index.css";
@@ -19,8 +22,20 @@ const router = createBrowserRouter([
     element: <ContactPage />,
   },
   {
-    path: "/dron-model",
+    path: "/Dron-model",
     element: <DronDetails />,
+  },
+  {
+    path: "/Camera-model",
+    element: <CameraDetails />,
+  },
+  {
+    path: "/Bicycle-model",
+    element: <BicycleDetails />,
+  },
+  {
+    path: "/Geneva-drive-model",
+    element: <GenevaDetails />,
   },
 ]);
 

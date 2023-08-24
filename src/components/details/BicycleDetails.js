@@ -1,11 +1,9 @@
 import React from "react";
-import DronElement from "../../assets/3d-model/Dron/DronView";
 import Details from "../../assets/ui/detail/Details.js";
-function DronDetails() {
+
+function BicycleDetails() {
   let description = [
     {
-      introduction:
-        "Experience the captivating world of 3D design with this exceptional drone model that showcases meticulous craftsmanship and innovation. ",
       introductionSecond:
         " From the intricately designed propellers to the detailed frame, each component has been carefully crafted to embody authenticity and elevate the visual appeal. This model is a testament to the power of modern technology and the artistry involved in creating a realistic 3D representation.",
       description:
@@ -17,7 +15,7 @@ function DronDetails() {
     },
   ];
 
-  return <Details element={<DronElement />} description={description} />;
+  return <Details description={description} />;
 }
 
-export default DronDetails;
+export default BicycleDetails;
