@@ -7,17 +7,12 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
+  gap: 0px;
   align-items: center;
-  justify-content: space-evenly;
   background-color: rgb(0, 0, 0);
   z-index: -10;
 }
-.img-catalogue {
-  cursor: pointer;
-  height: auto;
 
-  width: 100vw;
-}
 #info-container {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
@@ -106,8 +101,11 @@
   transition: all 0.25s ease-in-out;
 }
 #img-container {
-  height: 20vh;
-  width: 20vw;
+  height: 50vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #close-btn:hover {
   rotate: 45deg;
@@ -138,6 +136,9 @@
     height: 30px;
     width: 30px;
     margin-top: -20px;
+  }
+  #img-container {
+    height: 75vh;
   }
 }
 
