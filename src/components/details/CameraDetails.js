@@ -1,22 +1,22 @@
 import React from "react";
-import Details from "../../assets/ui/detail/Details";
-import DronElement from "../../assets/3d-model/CanvasModel";
+import Details from "../../assets/ui/detail/Details.js";
+import imageExports from "../../assets/img/camera/indexCamera.js";
+import Camera from "../../assets/3d-model/Camera/CameraModel.js";
+function DronDetails() {
+  const imageList = [imageExports.base, imageExports.lente];
+  const commonProps = {
+    imageList,
+    element: <Camera />,
+    imageLarge: imageExports.camaraLargeFirst,
+    imageLargeTwo: imageExports.camaraLargeSecond,
+    axisX: 0.15,
+    axisY: 0,
+    axisZ: 0.5,
+    zoom: window.innerWidth < 700 ? 3 : 5, // Adjust zoom based on window width
+    verticalAdjustment: 0,
+  };
 
-function CameraDetails() {
-  let description = [
-    {
-      introductionSecond:
-        " From the intricately designed propellers to the detailed frame, each component has been carefully crafted to embody authenticity and elevate the visual appeal. This model is a testament to the power of modern technology and the artistry involved in creating a realistic 3D representation.",
-      description:
-        "Using advanced software like SOLIDWORKS, the model's curves, contours, and angles have been thoughtfully designed to deliver a high-quality and lifelike visual experience. ",
-      descriptionSecond:
-        "It accurately captures the essence of a real-world drone, allowing you to appreciate the intricate design and craftsmanship behind it.",
-      descriptionThird:
-        "Whether you're an enthusiast or a professional, this beautifully crafted 3D model it demonstrates the impressive potential of 3D rendering, immersing viewers in a world where creativity and functionality. It's a testament to the power of modern technology and the ability to bring concepts to life with stunning visuals and intricate details..",
-    },
-  ];
-
-  return <Details element={<DronElement />} description={description} />;
+  return <Details {...commonProps} />;
 }
 
-export default CameraDetails;
+export default DronDetails;

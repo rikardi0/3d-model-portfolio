@@ -1,21 +1,22 @@
 import React from "react";
 import Details from "../../assets/ui/detail/Details.js";
-
+import imageExports from "../../assets/img/geneva/indexGeneva.js";
+import Geneva from "../../assets/3d-model/Geneva Drive/GenevaDriveModelo.js";
 function GenevaDetails() {
-  let description = [
-    {
-      introductionSecond:
-        " From the intricately designed propellers to the detailed frame, each component has been carefully crafted to embody authenticity and elevate the visual appeal. This model is a testament to the power of modern technology and the artistry involved in creating a realistic 3D representation.",
-      description:
-        "Using advanced software like SOLIDWORKS, the model's curves, contours, and angles have been thoughtfully designed to deliver a high-quality and lifelike visual experience. ",
-      descriptionSecond:
-        "It accurately captures the essence of a real-world drone, allowing you to appreciate the intricate design and craftsmanship behind it.",
-      descriptionThird:
-        "Whether you're an enthusiast or a professional, this beautifully crafted 3D model it demonstrates the impressive potential of 3D rendering, immersing viewers in a world where creativity and functionality. It's a testament to the power of modern technology and the ability to bring concepts to life with stunning visuals and intricate details..",
-    },
-  ];
+  let imageList = [imageExports.drive, imageExports.driven];
+  const commonProps = {
+    imageList,
+    element: <Geneva />,
+    imageLarge: imageExports.genevaLargeOne,
+    imageLargeTwo: imageExports.genevaLargeTwo,
+    axisX: 5,
+    axisY: 7,
+    axisZ: 0,
+    zoom: window.innerWidth < 700 ? 20 : 40, // Adjust zoom based on window width
+    verticalAdjustment: 0,
+  };
 
-  return <Details description={description} />;
+  return <Details {...commonProps} />;
 }
 
 export default GenevaDetails;

@@ -1,21 +1,22 @@
 import React from "react";
 import Details from "../../assets/ui/detail/Details.js";
-
+import imageExports from "../../assets/img/bicicleta/indexBicycle.js";
+import Bicicleta from "../../assets/3d-model/Bicicleta/ModeloBicicleta.js";
 function BicycleDetails() {
-  let description = [
-    {
-      introductionSecond:
-        " From the intricately designed propellers to the detailed frame, each component has been carefully crafted to embody authenticity and elevate the visual appeal. This model is a testament to the power of modern technology and the artistry involved in creating a realistic 3D representation.",
-      description:
-        "Using advanced software like SOLIDWORKS, the model's curves, contours, and angles have been thoughtfully designed to deliver a high-quality and lifelike visual experience. ",
-      descriptionSecond:
-        "It accurately captures the essence of a real-world drone, allowing you to appreciate the intricate design and craftsmanship behind it.",
-      descriptionThird:
-        "Whether you're an enthusiast or a professional, this beautifully crafted 3D model it demonstrates the impressive potential of 3D rendering, immersing viewers in a world where creativity and functionality. It's a testament to the power of modern technology and the ability to bring concepts to life with stunning visuals and intricate details..",
-    },
-  ];
+  let imageList = [imageExports.cadena, imageExports.rear];
+  const commonProps = {
+    imageList,
+    element: <Bicicleta />,
+    imageLarge: imageExports.bicicletaLargeOne,
+    imageLargeTwo: imageExports.bicicletaLargeTwo,
+    axisX: 0,
+    axisY: 2,
+    axisZ: 10,
+    zoom: window.innerWidth < 700 ? 7 : 12, // Adjust zoom based on window width
+    verticalAdjustment: 0,
+  };
 
-  return <Details description={description} />;
+  return <Details {...commonProps} />;
 }
 
 export default BicycleDetails;
