@@ -1,10 +1,5 @@
 #container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#container {
-  background-color: rgba(255, 255, 255, 0.719);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -12,16 +7,20 @@
 #canvas-container {
   height: 55vh;
   width: 50vw;
-  background: rgba(92, 92, 92, 0.308);
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
   border-bottom: 0px;
   border-top: 0px;
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.336);
 }
 
 .triangle-background {
   height: 5vh;
   width: 25vw;
   z-index: -1;
-  background-color: aqua;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.336);
 }
 #orange-background {
@@ -29,4 +28,86 @@
 }
 #black-background {
   background-color: rgb(0, 0, 0);
+}
+#loading-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  --size: 30px;
+  --first-block-clr: #000000;
+  --second-block-clr: #fe9000;
+  --clr: #111;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.spinner::after,
+.spinner::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  width: var(--size);
+  height: var(--size);
+  top: 50%;
+  animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+  left: 50%;
+  background: var(--first-block-clr);
+}
+
+.spinner::after {
+  background: var(--second-block-clr);
+  top: calc(50% - var(--size));
+  left: calc(50% - var(--size));
+  animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+}
+
+@keyframes down {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  25% {
+    transform: translateX(100%);
+  }
+
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  75% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes up {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  25% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(-100%) translateY(-100%);
+  }
+
+  75% {
+    transform: translateY(-100%);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #canvas-container {
+    width: 80vw;
+    height: 30vh;
+  }
+  .triangle-background {
+    width: 10vw;
+  }
 }
