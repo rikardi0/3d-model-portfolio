@@ -12,7 +12,7 @@ function BicycleDetails() {
     axisX: 0,
     axisY: 2,
     axisZ: 10,
-    zoom: window.innerWidth < 700 ? 7 : 12, // Adjust zoom based on window width
+    zoom: window.innerWidth < 700 ? 5 : 7, // Adjust zoom based on window width
     verticalAdjustment: 0,
   };
 

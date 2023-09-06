@@ -3,7 +3,7 @@ import Details from "../../assets/ui/detail/Details.js";
 import imageExports from "../../assets/img/dron";
 import Dron from "../../assets/3d-model/Dron/DronModel.js";
 function DronDetails() {
-  let imageList = [imageExports.motor, imageExports.dron];
+  let imageList = [imageExports.motor, imageExports.camaraAire];
 
   const commonProps = {
     imageList,

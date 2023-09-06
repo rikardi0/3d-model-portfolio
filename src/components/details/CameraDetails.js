@@ -3,7 +3,7 @@ import Details from "../../assets/ui/detail/Details.js";
 import imageExports from "../../assets/img/camera/indexCamera.js";
 import Camera from "../../assets/3d-model/Camera/CameraModel.js";
 function DronDetails() {
-  const imageList = [imageExports.base, imageExports.lente];
+  const imageList = [imageExports.desarmadoLado, imageExports.lente];
   const commonProps = {
     imageList,
     element: <Camera />,
