@@ -8,14 +8,15 @@ const tryRequire = (path) => {
 };
 
 const imageExports = {
-  dron: tryRequire("./Dron.png") || require("./Sombra.png"),
-  dronPrueba: tryRequire("./Roughness.png") || require("./Sombra.png"),
-  dronRoja: tryRequire("./dron-red.jpg") || require("./Sombra.png"),
-  dronExplode: tryRequire("./dron-explode.png") || require("./Sombra.png"),
-  dronEstructura: tryRequire("./estructura.png") || require("./Sombra.png"),
-  camaraAire: tryRequire("./camara-aire.png") || require("./Sombra.png"),
-  motor: tryRequire("./motor-brush.png") || require("./Sombra.png"),
-  imgLarge: tryRequire("./large-image.png") || require("./Sombra.png"),
+  dron: tryRequire("./Dron.png"),
+  dronLargeOne: tryRequire("./dron-large-first.png"),
+  dronLargeTwo: tryRequire("./dron-large-second.jpg"),
+  dronPortada: tryRequire("./dron-red.jpg"),
+  dronExplode: tryRequire("./dron-explode.png"),
+  estructura: tryRequire("./estructura.png"),
+  camaraAire: tryRequire("./camara-aire.png"),
+  motor: tryRequire("./motor-brush.png"),
+  sombra: tryRequire("./Sombra.png"),
 };
 
 export default imageExports;

@@ -8,13 +8,15 @@ const tryRequire = (path) => {
 };
 
 const imageBicycle = {
-  bicicleta: tryRequire("./Bicycle 4.jpg"),
-  bicicletaSecond: tryRequire("./Bicycle 3.jpg"),
+  bicicletaPortada: tryRequire("./bicicleta-main.jpg"),
+  bicicleta: tryRequire("./bicicleta.png"),
+  bicicletaLargeOne: tryRequire("./bicicleta-large-first.png"),
+  bicicletaLargeTwo: tryRequire("./bicicleta-large-second.png"),
   ruedaBicicleta: tryRequire("./rueda.png"),
   freno: tryRequire("./freno.png"),
   frame: tryRequire("./frame.png"),
-  rear: tryRequire("./rear.png"),
-  explode: tryRequire("./explode.png"),
+  rear: tryRequire("./descarrilador.png"),
+  explode: tryRequire("./bicicleta-explode.png"),
   cadena: tryRequire("./cadena.png"),
 };
 

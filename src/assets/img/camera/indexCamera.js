@@ -8,9 +8,10 @@ const tryRequire = (path) => {
 };
 
 const imageExportsCamera = {
-  camara: tryRequire("./camera-sldr 5.jpg"),
-  camaraPlaya: tryRequire("./camera-sldr 2.jpg"),
-  camaraSola: tryRequire("./camera-sldr.png"),
+  camara: tryRequire("./camera.png"),
+  camaraPortada: tryRequire("./camera-sldr.jpg"),
+  camaraLargeFirst: tryRequire("./camera-large-first.png"),
+  camaraLargeSecond: tryRequire("./camera-large-second.png"),
   base: tryRequire("./base.png"),
   desarmadoLado: tryRequire("./desarmado-lado.png"),
   frente: tryRequire("./frente.png"),

@@ -5,7 +5,7 @@ import imagesGeneva from "../img/geneva/indexGeneva.js";
 
 const portfoliolist = [
   {
-    path: imagesDron.dronRoja,
+    path: imagesDron.dronPortada,
     alt: "Dron",
     color: "#f5f5f5",
     link: "/Dron-model",
@@ -18,28 +18,28 @@ const portfoliolist = [
         path: imagesDron.dronExplode,
       },
       {
-        path: imagesDron.dronEstructura,
+        path: imagesDron.estructura,
       },
       {
-        path: imagesDron.camaraAire,
+        path: imagesDron.motor,
       },
     ],
   },
   {
-    path: imagesCamera.camara,
+    path: imagesCamera.camaraPortada,
     alt: "DSLR Camera",
     color: "#f5f5f5",
     link: "/Camera-model",
 
     imagesSlide: [
       {
-        path: imagesCamera.camaraSola,
-      },
-      {
-        path: imagesCamera.frente,
+        path: imagesCamera.camara,
       },
       {
         path: imagesCamera.desarmadoLado,
+      },
+      {
+        path: imagesCamera.frente,
       },
 
       {
@@ -56,7 +56,7 @@ const portfoliolist = [
 
     imagesSlide: [
       {
-        path: imagesGeneva.genevaAngulo,
+        path: imagesGeneva.genevaDriveGif,
       },
       {
         path: imagesGeneva.base,
@@ -70,14 +70,14 @@ const portfoliolist = [
     ],
   },
   {
-    path: imagesBicycle.bicicleta,
+    path: imagesBicycle.bicicletaPortada,
     alt: "Bicycle",
     color: "#f5f5f5",
     link: "/Bicycle-model",
 
     imagesSlide: [
       {
-        path: imagesBicycle.explode,
+        path: imagesBicycle.bicicleta,
       },
       {
         path: imagesBicycle.explode,
