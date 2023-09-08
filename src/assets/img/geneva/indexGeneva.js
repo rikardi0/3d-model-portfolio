@@ -8,15 +8,15 @@ const tryRequire = (path) => {
 };
 
 const imageExports = {
-  genevaDrive: tryRequire("./geneva-drive.jpg"),
-  genevaLargeOne: tryRequire("./geneva-large-first.png"),
-  genevaLargeTwo: tryRequire("./geneva-large-second.jpg"),
+  genevaDrive: tryRequire("./geneva-drive.webp"),
+  genevaLargeOne: tryRequire("./geneva-large-first.webp"),
+  genevaLargeTwo: tryRequire("./geneva-large-second.webp"),
   genevaDriveGif: tryRequire("./geneva-drive.gif"),
-  genevaAngulo: tryRequire("./geneva-45.png"),
-  base: tryRequire("./base.png"),
-  baseTop: tryRequire("./base-top.png"),
-  drive: tryRequire("./drive.png"),
-  driven: tryRequire("./driven.png"),
+  genevaAngulo: tryRequire("./geneva-45.webp"),
+  base: tryRequire("./base.webp"),
+  baseTop: tryRequire("./base-top.webp"),
+  drive: tryRequire("./drive.webp"),
+  driven: tryRequire("./driven.webp"),
 };
 
 export default imageExports;

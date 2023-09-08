@@ -8,14 +8,14 @@ const tryRequire = (path) => {
 };
 
 const imageExportsCamera = {
-  camara: tryRequire("./camera.png"),
-  camaraPortada: tryRequire("./camera-sldr.jpg"),
-  camaraLargeFirst: tryRequire("./camera-large-first.png"),
-  camaraLargeSecond: tryRequire("./camera-large-second.png"),
-  base: tryRequire("./base.png"),
-  desarmadoLado: tryRequire("./desarmado-lado.png"),
-  frente: tryRequire("./frente.png"),
-  lente: tryRequire("./lente.png"),
+  camara: tryRequire("./camera.webp"),
+  camaraPortada: tryRequire("./camera-sldr.webp"),
+  camaraLargeFirst: tryRequire("./camera-large-first.webp"),
+  camaraLargeSecond: tryRequire("./camera-large-second.webp"),
+  base: tryRequire("./base.webp"),
+  desarmadoLado: tryRequire("./desarmado-lado.webp"),
+  frente: tryRequire("./frente.webp"),
+  lente: tryRequire("./lente.webp"),
 };
 
 export default imageExportsCamera;

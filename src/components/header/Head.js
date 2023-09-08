@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "../../assets/img/dron/Global-Ilumination.png";
-import ImageShadow from "../../assets/img/dron/Sombra.png";
+import Image from "../../assets/img/dron/Global-Ilumination.webp";
+import ImageShadow from "../../assets/img/dron/Sombra.webp";
 import Menu from "../../assets/ui/menu/menu";
 import "./Head.css";
 
