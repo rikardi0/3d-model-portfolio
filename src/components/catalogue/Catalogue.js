@@ -43,6 +43,7 @@ function GridElement(props) {
         <div
           id="img-container"
           onClick={handleClick}
+          loading="lazy"
           style={{ backgroundImage: `url("${path}")` }}
         ></div>
       </div>

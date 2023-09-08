@@ -12,8 +12,13 @@ function Head() {
           <Menu />
         </div>
         <div className="spacer" id="line-orange"></div>
-        <img src={Image} alt="3D model dron" id="dron-img"></img>
-        <img src={ImageShadow} alt="3D model dron" id="dron-img-shadow"></img>
+        <img src={Image} loading="lazy" alt="3D model dron" id="dron-img"></img>
+        <img
+          src={ImageShadow}
+          loading="lazy"
+          alt="3D model dron"
+          id="dron-img-shadow"
+        ></img>
       </div>
       <div className="sized-box">
         <div className="triangle" id="orange-tri"></div>
