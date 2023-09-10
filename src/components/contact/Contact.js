@@ -30,20 +30,7 @@ const ContactSection = () => {
           </button>
         </form>
       </div>
-      <div className="contact-divider">
-        <span>Or</span>
-      </div>
-      <div className="social-links">
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-          Facebook
-        </a>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-          Twitter
-        </a>
-        <a href="https://example.com" target="_blank" rel="noopener noreferrer">
-          Instagram
-        </a>
-      </div>
+      <div className="contact-divider"></div>
     </div>
   );
 };
