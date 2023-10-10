@@ -23,46 +23,6 @@
   z-index: -1;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.336);
 }
-#orange-background {
-  background-color: rgb(255, 136, 0);
-}
-#black-background {
-  background-color: rgb(0, 0, 0);
-}
-#loading-screen {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.spinner {
-  --size: 30px;
-  --first-block-clr: #000000;
-  --second-block-clr: #fe9000;
-  --clr: #111;
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
-
-.spinner::after,
-.spinner::before {
-  box-sizing: border-box;
-  position: absolute;
-  content: "";
-  width: var(--size);
-  height: var(--size);
-  top: 50%;
-  animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
-  left: 50%;
-  background: var(--first-block-clr);
-}
-
-.spinner::after {
-  background: var(--second-block-clr);
-  top: calc(50% - var(--size));
-  left: calc(50% - var(--size));
-  animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
-}
 
 @keyframes down {
   0%,
