@@ -23,6 +23,12 @@
   z-index: -1;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.336);
 }
+#orange-background {
+  background-color: rgb(255, 136, 0);
+}
+#black-background {
+  background-color: rgb(0, 0, 0);
+}
 
 @keyframes down {
   0%,
