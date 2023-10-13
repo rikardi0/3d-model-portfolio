@@ -1,0 +1,26 @@
+.loadingScreen {
+  position: absolute;
+  height: 55vh;
+  width: 50vw;
+  background-color: rgba(0, 0, 0, 0.849);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  transition: all ease 0.25s;
+}
+
+.loadingScreen__progress__value {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  left: 0;
+  bottom: 0;
+  height: 5vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.671);
+  transition: width 0.25s;
+}
